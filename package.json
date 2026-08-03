@@ -1,0 +1,33 @@
+{
+  "name": "cmd-logger",
+  "version": "1.0.0",
+  "description": "CLI tool to log, track, and analyze command execution history in projects.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "cmd-logger": "./bin/cmd-logger.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/interface/cli/index.ts",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "cli",
+    "command-logger",
+    "history",
+    "productivity",
+    "logging"
+  ],
+  "author": "mansgori",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
