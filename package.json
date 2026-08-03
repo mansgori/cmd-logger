@@ -8,8 +8,8 @@
     "cmd-logger": "./bin/cmd-logger.js"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "tsx src/interface/cli/index.ts",
+    "build": "node api.js && tsc",
+    "start": "node api.js && tsx src/interface/cli/index.ts",
     "test": "vitest run"
   },
   "keywords": [
